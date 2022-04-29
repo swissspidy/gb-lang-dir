@@ -1,0 +1,36 @@
+{
+  "name": "gb-lang-dir",
+  "private": true,
+  "description": "Adds options to choose language and text direction on a per-block basis.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swissspidy/gb-lang-dir.git"
+  },
+  "author": "swissspidy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/swissspidy/gb-lang-dir/issues"
+  },
+  "homepage": "https://github.com/swissspidy/gb-lang-dir#readme",
+  "dependencies": {
+    "@wordpress/block-editor": "^8.6.0",
+    "@wordpress/components": "^19.9.0",
+    "@wordpress/compose": "^5.5.0",
+    "@wordpress/element": "^4.5.0",
+		"@wordpress/i18n": "^4.3.1",
+		"@wordpress/hooks": "^3.7.0"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^4.6.0",
+    "@wordpress/scripts": "^22.5.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build src/main.js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "start": "wp-scripts start src/main.js",
+    "wp-env": "wp-env"
+  }
+}

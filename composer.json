@@ -1,0 +1,38 @@
+{
+  "name": "swissspidy/gb-lang-dir",
+  "description": "Adds options to choose language and text direction on a per-block basis.",
+  "license": "Apache-2.0",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Pascal Birchler",
+      "email": "swissspidy@chat.wordpress.org",
+      "homepage": "https://pascalbirchler.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.20",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.0",
+    "roave/security-advisories": "dev-latest",
+    "wp-coding-standards/wpcs": "^2.1",
+    "yoast/phpunit-polyfills": "^1.0.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "platform": {
+      "php": "5.6.20"
+    }
+  },
+  "scripts": {
+    "format": "vendor/bin/phpcbf --report-summary --report-source .",
+    "lint": "vendor/bin/phpcs --report-summary --report-source .",
+    "test": "vendor/bin/phpunit"
+  }
+}
